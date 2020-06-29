@@ -2,10 +2,18 @@
 Rotary encoder turbo and PCA9685
 
 
-Logarithmic applied scale to rotary encoder turbo. Turbo mode start if turning rapidly rotary weel and stop automatically after 3 seconds. Tested with blue-pill and PCA9685.
+Logarithmic applied scale to rotary encoder turbo. Turbo mode start if turning rapidly rotary weel and stop automatically after 3 seconds. Tested with stm32f103c8t6 (blue-pill) and PCA9685.
 For used scale I added gnumeric spreadsheet for double type value control match with integers in arduino schetch.
 
-Test environment:
+You can modify this code according yours own needs.
+Pls consider this: <br />
+&nbsp;&nbsp;a - using for led dimming: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with logarithmic derived scale consider apparent light intensity modulation not of light source but for whole light reflecting 3d area; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with scale range (here 500 steps) and timing for turbo mode, you can adapt this code with whole 3d area regarding light reflecting caracteristics and rotary using mode also reducing 360° rotary turns number not needing very large single step luminosity difference; <br />
+&nbsp;&nbsp;b - with motors, ... be  careful using turbo. :-)
+
+
+My test environment:
 
 ![alt text](https://github.com/hvcoabtap/rotary-turbo-PCA9685/blob/master/Testing.JPG?raw=true)
 
